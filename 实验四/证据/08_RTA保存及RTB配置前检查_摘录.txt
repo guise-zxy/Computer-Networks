@@ -1,0 +1,24 @@
+RTA 保存结果（用户粘贴）
+[RTA_zhangxinyi]return
+<RTA_zhangxinyi>save force
+Validating file. Please wait...
+Configuration is saved to device successfully.
+
+RTB 配置前检查（用户完整粘贴输出的相关摘录）
+<RTB_zhangxinyi>display ip interface brief
+Interface           Physical Protocol IP address/Mask    VPN instance Description
+GE0/0               up       up       --                 --           --
+GE0/1               up       up       --                 --           --
+其他物理接口均 down/down，均无 IP。
+
+<RTB_zhangxinyi>display current-configuration
+ version 7.1.064, Release 0427P22
+ sysname RTB_zhangxinyi
+interface GigabitEthernet0/0
+ port link-mode route
+ combo enable copper
+interface GigabitEthernet0/1
+ port link-mode route
+ combo enable copper
+
+完整粘贴配置中无接口 IP 和 ip route-static；此处省略默认用户角色等无关配置。

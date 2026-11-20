@@ -1,0 +1,26 @@
+RTB 配置后验证（用户实际输出的关键摘录）
+[RTB_zhangxinyi]display ip interface brief
+Interface           Physical Protocol IP address/Mask    VPN instance Description
+GE0/0               up       up       10.2.0.2/24        --           --
+GE0/1               up       up       10.3.0.1/24        --           --
+其余接口 down/down，无 IP。
+
+[RTB_zhangxinyi]display ip routing-table
+Destinations : 15       Routes : 15
+Destination/Mask   Proto   Pre Cost        NextHop         Interface
+0.0.0.0/0          Static  60  0           10.3.0.2        GE0/1
+10.1.0.0/24        Static  60  0           10.2.0.1        GE0/0
+10.2.0.0/24        Direct  0   0           10.2.0.2        GE0/0
+10.3.0.0/24        Direct  0   0           10.3.0.1        GE0/1
+（省略本地 /32、环回和组播等 Direct 条目）
+
+[RTB_zhangxinyi]ping 10.2.0.1
+Ping 10.2.0.1 (10.2.0.1): 56 data bytes, press CTRL+C to break
+56 bytes from 10.2.0.1: icmp_seq=0 ttl=255 time=1.002 ms
+56 bytes from 10.2.0.1: icmp_seq=1 ttl=255 time=0.755 ms
+56 bytes from 10.2.0.1: icmp_seq=2 ttl=255 time=0.675 ms
+56 bytes from 10.2.0.1: icmp_seq=3 ttl=255 time=0.685 ms
+56 bytes from 10.2.0.1: icmp_seq=4 ttl=255 time=0.719 ms
+--- Ping statistics for 10.2.0.1 ---
+5 packet(s) transmitted, 5 packet(s) received, 0.0% packet loss
+round-trip min/avg/max/std-dev = 0.675/0.767/1.002/0.121 ms

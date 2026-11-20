@@ -1,0 +1,14 @@
+RTB 配置过程（用户粘贴，命令间未显示报错）
+<RTB_zhangxinyi>system-view
+System View: return to User View with Ctrl+Z.
+[RTB_zhangxinyi]interface GigabitEthernet0/0
+[RTB_zhangxinyi-GigabitEthernet0/0]ip address 10.2.0.2 255.255.255.0
+[RTB_zhangxinyi-GigabitEthernet0/0]quit
+[RTB_zhangxinyi]interface GigabitEthernet0/1
+[RTB_zhangxinyi-GigabitEthernet0/1]ip address 10.3.0.1 255.255.255.0
+[RTB_zhangxinyi-GigabitEthernet0/1]quit
+[RTB_zhangxinyi]ip route-static 10.1.0.0 24 10.2.0.1
+[RTB_zhangxinyi]ip route-static 0.0.0.0 0.0.0.0 10.3.0.2
+[RTB_zhangxinyi]
+
+接口、路由入表、邻接 ping 与保存尚待验证。

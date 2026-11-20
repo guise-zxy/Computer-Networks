@@ -1,0 +1,60 @@
+{
+ "projectInfo": {
+  "name": "实验4_静态路由基本配置",
+  "path": "hcl_88a526097780",
+  "visibility": "0",
+  "introduction": "",
+  "label": []
+ },
+ "deviceInfoList": [
+  {
+   "resourceName": "MSR36-20_1",
+   "resourceCategory": "路由器",
+   "resourceModel": "MSR36-20",
+   "resourceVersion": "CMW7.1.064-R0821P11",
+   "configPath": "DeviceConfig\\MSR36-20_1.cfg"
+  },
+  {
+   "resourceName": "MSR36-20_2",
+   "resourceCategory": "路由器",
+   "resourceModel": "MSR36-20",
+   "resourceVersion": "CMW7.1.064-R0821P11",
+   "configPath": "DeviceConfig\\MSR36-20_2.cfg"
+  },
+  {
+   "resourceName": "MSR36-20_3",
+   "resourceCategory": "路由器",
+   "resourceModel": "MSR36-20",
+   "resourceVersion": "CMW7.1.064-R0821P11",
+   "configPath": "DeviceConfig\\MSR36-20_3.cfg"
+  },
+  {
+   "resourceName": "MSR36-20_4",
+   "resourceCategory": "路由器",
+   "resourceModel": "MSR36-20",
+   "resourceVersion": "CMW7.1.064-R0821P11",
+   "configPath": "DeviceConfig\\MSR36-20_4.cfg"
+  },
+  {
+   "resourceName": "PC_5",
+   "resourceCategory": "终端",
+   "resourceModel": "PC",
+   "resourceVersion": "",
+   "configPath": "DeviceConfig\\PC_5.cfg"
+  },
+  {
+   "resourceName": "PC_6",
+   "resourceCategory": "终端",
+   "resourceModel": "PC",
+   "resourceVersion": "",
+   "configPath": "DeviceConfig\\PC_6.cfg"
+  },
+  {
+   "resourceName": "Host_1",
+   "resourceCategory": "终端",
+   "resourceModel": "Host",
+   "resourceVersion": "",
+   "configPath": ""
+  }
+ ]
+}

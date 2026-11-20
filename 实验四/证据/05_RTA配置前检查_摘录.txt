@@ -1,0 +1,28 @@
+RTA 配置前检查（用户粘贴输出摘录，省略默认用户角色等无关项）
+
+<RTA_zhangxinyi>display ip interface brief
+Interface           Physical Protocol IP address/Mask    VPN instance Description
+GE0/0               up       up       --                 --           --
+GE0/1               up       up       --                 --           --
+GE0/2               down     down     --                 --           --
+GE5/0               down     down     --                 --           --
+GE5/1               down     down     --                 --           --
+GE6/0               down     down     --                 --           --
+GE6/1               down     down     --                 --           --
+Ser1/0              down     down     --                 --           --
+Ser2/0              down     down     --                 --           --
+Ser3/0              down     down     --                 --           --
+Ser4/0              down     down     --                 --           --
+
+<RTA_zhangxinyi>display current-configuration
+ version 7.1.064, Release 0427P22
+ sysname RTA_zhangxinyi
+interface GigabitEthernet0/0
+ port link-mode route
+ combo enable copper
+interface GigabitEthernet0/1
+ port link-mode route
+ combo enable copper
+
+核对完整粘贴内容：所有接口均未设置 IP；不存在 ip route-static 配置。
+CLI 接口是 GigabitEthernet0/0 与 GigabitEthernet0/1，本次无需使用实验三的 1/0/x 映射。

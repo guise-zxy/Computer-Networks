@@ -1,0 +1,12 @@
+RTC 新增 Host 网关接口（用户实际输出）
+<RTC_zhangxinyi>system-view
+System View: return to User View with Ctrl+Z.
+[RTC_zhangxinyi]interface GigabitEthernet0/2
+[RTC_zhangxinyi-GigabitEthernet0/2]ip address 10.6.0.254 255.255.255.0
+[RTC_zhangxinyi-GigabitEthernet0/2]quit
+[RTC_zhangxinyi]display ip interface brief
+Interface           Physical Protocol IP address/Mask    VPN instance Description
+GE0/0               up       up       10.3.0.2/24        --           --
+GE0/1               up       up       10.4.0.1/24        --           --
+GE0/2               up       up       10.6.0.254/24      --           --
+其他接口 down/down，无 IP（省略）。

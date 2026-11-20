@@ -1,0 +1,18 @@
+RTD 配置前检查（用户完整粘贴输出的关键摘录）
+<RTD_zhangxinyi>display ip interface brief
+Interface           Physical Protocol IP address/Mask    VPN instance Description
+GE0/0               up       up       --                 --           --
+GE0/1               up       up       --                 --           --
+其余接口均 down/down，无 IP。
+
+<RTD_zhangxinyi>display current-configuration
+ version 7.1.064, Release 0427P22
+ sysname RTD_zhangxinyi
+interface GigabitEthernet0/0
+ port link-mode route
+ combo enable copper
+interface GigabitEthernet0/1
+ port link-mode route
+ combo enable copper
+
+完整配置中无接口 IP 与 ip route-static，省略其余默认配置。

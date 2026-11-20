@@ -1,0 +1,20 @@
+RTC 配置前检查（用户实际输出的相关摘录）
+<RTC_zhangxinyi>display ip interface brief
+Interface           Physical Protocol IP address/Mask    VPN instance Description
+GE0/0               up       up       --                 --           --
+GE0/1               up       up       --                 --           --
+GE0/2               down     down     --                 --           --
+其余 GE5/0、GE5/1、GE6/0、GE6/1、Ser1/0 至 Ser4/0 均 down/down，无 IP。
+
+<RTC_zhangxinyi>display current-configuration
+ version 7.1.064, Release 0427P22
+ sysname RTC_zhangxinyi
+interface GigabitEthernet0/0
+ port link-mode route
+ combo enable copper
+interface GigabitEthernet0/1
+ port link-mode route
+ combo enable copper
+
+完整粘贴配置无接口 IP 和 ip route-static，省略默认角色等无关项。
+RTB 保存：用户表示已看到保存成功，无新增原始提示或截图。

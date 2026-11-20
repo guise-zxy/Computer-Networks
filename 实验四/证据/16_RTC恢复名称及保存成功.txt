@@ -1,0 +1,9 @@
+RTC 恢复名称与保存（用户实际粘贴）
+[RTC_chenmeijie] sysname RTC_zhangxinyi
+[RTC_zhangxinyi]return
+<RTC_zhangxinyi>save force
+Validating file. Please wait...
+Configuration is saved to device successfully.
+<RTC_zhangxinyi>
+
+前面的零散配置段不完整，不用于推断接口配置变化；此前已验证的接口与路由结果见 14、15 号原始截图。
